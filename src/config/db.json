@@ -1,0 +1,32 @@
+{
+    "log": "Api is running! 04-09-2019 03h28m54",
+    "card": {
+        "list": [
+            {
+                "number": "335",
+                "address": "R. Francisco Araújo Chaves",
+                "neighborhood": "Jardim Europa",
+                "name": "Francielle",
+                "city": "Jandira",
+                "state": "São Paulo",
+                "_id": "mkc6tck04sqhkm"
+            }
+        ]
+    },
+    "itinerary": {
+        "list": [
+            {
+                "date": "2019-09-04T05:19:41.917Z",
+                "cards": [],
+                "removedCards": [],
+                "_id": "mkc74ck04tba73"
+            },
+            {
+                "date": "2019-09-04T05:20:09.733Z",
+                "cards": [],
+                "removedCards": [],
+                "_id": "mkc74ck04tbvnp"
+            }
+        ]
+    }
+}

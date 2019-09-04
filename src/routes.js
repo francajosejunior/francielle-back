@@ -9,10 +9,10 @@ routes.post('/card', CardController.store)
 
 routes.get('/itinerary', ItineraryController.index)
 routes.get('/itinerary/:date', ItineraryController.getByDate)
-// routes.delete(
-//   '/itinerary/:itineraryId/:cardId/',
-//   ItineraryController.removeCard
-// )
+routes.delete(
+  '/itinerary/:itineraryId/:cardId/',
+  ItineraryController.removeCard
+)
 routes.post('/itinerary/:itineraryId', ItineraryController.addCard)
 
 module.exports = routes

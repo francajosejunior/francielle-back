@@ -1,27 +1,27 @@
-const Itinerary = require('./../models/Itinerary')
-
-const path = require('path')
+const ItineraryService = require('./../Services/ItineraryService')
 
 module.exports = {
   async index(req, res) {
-    const itinerary = await Itinerary.find()
-    res.json(itinerary)
+    const list = await ItineraryService.find()
+    res.json(list)
   },
   async getByDate(req, res) {
     const date = req.params.date
-    const itinerary = await Itinerary.find({
-      date: { $gte: date, $lte: date }
-    })
+    const itinerary = await ItineraryService.findByDate(date)
+    res.json(itinerary)
+  },
 
+  async removeCard(req, res) {
+    const { itineraryId, cardId } = req.params
+
+    const itinerary = await ItineraryService.removeCard(itineraryId, cardId)
     res.json(itinerary)
   },
 
   async addCard(req, res) {
     const itineraryId = req.params.itineraryId
     const { number, address, neighborhood, name, lat, long, _id } = req.body
-
-    const itinerary = await Itinerary.findById(itineraryId)
-    itinerary.cards.push({
+    const card = {
       number,
       address,
       neighborhood,
@@ -29,23 +29,9 @@ module.exports = {
       lat,
       long,
       _id
-    })
+    }
 
-    await itinerary.save()
-
+    const itinerary = await ItineraryService.addCard(itineraryId, card)
     res.json(itinerary)
   }
-
-  // async removeCard(req, res) {
-  //   const {  itineraryId,cardId } = req.params
-
-  //   const itinerary = await Itinerary.findById(itineraryId)
-
-  //   itinerary.cards = itinerary.cards.filter(c => c._id !== cardId)
-  //   itinerary.removedCards = itinerary.cards.filter(c => c._id === cardId)
-
-  //   await itinerary.save()
-
-  //   res.json(itinerary)
-  // }
 }

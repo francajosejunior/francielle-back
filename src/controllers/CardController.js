@@ -1,24 +1,15 @@
-const Card = require('./../models/Card')
+const CardService = require('./../Services/CardService')
+const db = require('./../config/db')
 
 const path = require('path')
 
 module.exports = {
   async index(req, res) {
-    const Cards = await Card.find()
+    const Cards = await CardService.find()
     res.json(Cards)
   },
   async store(req, res) {
-    const { number, address, neighborhood, name, lat, long } = req.body
-
-    const card = await Card.create({
-      number,
-      address,
-      neighborhood,
-      name,
-      lat,
-      long
-    })
-
+    const card = await CardService.save(req.body)
     res.json(card)
   }
 }
