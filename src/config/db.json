@@ -1,5 +1,5 @@
 {
-    "log": "Api is running! 04-09-2019 03h28m54",
+    "log": "Api is running! 09-09-2019 16h40m12",
     "card": {
         "list": [
             {
@@ -26,6 +26,12 @@
                 "cards": [],
                 "removedCards": [],
                 "_id": "mkc74ck04tbvnp"
+            },
+            {
+                "date": "2019-09-09T19:40:52.159Z",
+                "cards": [],
+                "removedCards": [],
+                "_id": "a30tck4k0cta0jk"
             }
         ]
     }

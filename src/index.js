@@ -18,4 +18,4 @@ app.use(require('./routes'))
 
 server.listen(3333)
 console.log(`Listen port:${3333}`)
-require('./LatLongRequest')
+// require('./LatLongRequest')

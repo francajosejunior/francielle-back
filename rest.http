@@ -4,18 +4,22 @@ GET http://localhost:3333/
 GET http://localhost:3333/card/
 ###
 
-POST http://localhost:3333/card HTTP/1.1
-Content-Type: application/json
+# POST http://localhost:3333/card HTTP/1.1
+# Content-Type: application/json
 
-{
-    "number":"335",
-    "address":"R. Francisco Araújo Chaves",
-    "neighborhood":"Jardim Europa", 
-    "name":"Francielle",
-    "city":"Jandira",
-    "state":"São Paulo"
-}
+# {
+#     "number":"335",
+#     "address":"R. Francisco Araújo Chaves",
+#     "neighborhood":"Jardim Europa", 
+#     "name":"Francielle",
+#     "city":"Jandira",
+#     "state":"São Paulo"
+# }
 ###
 
-GET http://localhost:3333/itinerary/2019-09-04
+
+GET http://localhost:3333/itinerary/2019-09-09
+###
+
+GET http://localhost:3333/itinerary
 ###
