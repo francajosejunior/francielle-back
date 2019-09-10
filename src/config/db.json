@@ -1,5 +1,5 @@
 {
-    "log": "Api is running! 09-09-2019 16h40m12",
+    "log": "Api is running! 10-09-2019 00h11m32",
     "card": {
         "list": [
             {
@@ -10,6 +10,15 @@
                 "city": "Jandira",
                 "state": "São Paulo",
                 "_id": "mkc6tck04sqhkm"
+            },
+            {
+                "number": "1656",
+                "address": "Av Carolina",
+                "neighborhood": "Fila Sao Francisco",
+                "name": "Zé",
+                "city": "Jandira",
+                "state": "São Paulo",
+                "_id": "mkc85ok0d6guh8"
             }
         ]
     },
@@ -29,9 +38,50 @@
             },
             {
                 "date": "2019-09-09T19:40:52.159Z",
+                "cards": [
+                    {
+                        "number": "335",
+                        "address": "R. Francisco Araújo Chaves",
+                        "neighborhood": "Jardim Europa",
+                        "name": "Francielle",
+                        "_id": "mkc6tck04sqhkm"
+                    },
+                    {
+                        "number": "1656",
+                        "address": "Av Carolina",
+                        "neighborhood": "Fila Sao Francisco",
+                        "name": "Zé",
+                        "_id": "mkc85ok0d6guh8"
+                    }
+                ],
+                "removedCards": [
+                    [
+                        [
+                            [
+                                [
+                                    [
+                                        [
+                                            [
+                                                [
+                                                    [
+                                                        []
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ],
+                "_id": "a30tck4k0cta0jk"
+            },
+            {
+                "date": "2019-09-10T03:02:26.588Z",
                 "cards": [],
                 "removedCards": [],
-                "_id": "a30tck4k0cta0jk"
+                "_id": "mkcapsk0d91vsa"
             }
         ]
     }
