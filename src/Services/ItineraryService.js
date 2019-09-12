@@ -24,15 +24,15 @@ class ItineraryService {
   }
   async addCard(itineraryId, card) {
     const itinerary = await itineraryRepository.findById(itineraryId)
-    itinerary.cards.push(card)
+    itinerary.cards.push(card._id)
     return await itineraryRepository.update(itinerary)
   }
   async removeCard(itineraryId, cardId) {
     const itinerary = await itineraryRepository.findById(itineraryId)
-    itinerary.cards = itinerary.cards.filter(x => x._id !== cardId)
+    itinerary.cards = itinerary.cards.filter(x => x !== cardId)
     itinerary.removedCards = [
-      itinerary.removedCards,
-      ...itinerary.cards.filter(x => x._id === cardId)
+      ...itinerary.removedCards,
+      ...itinerary.cards.filter(x => x === cardId)
     ]
     return await itineraryRepository.update(itinerary)
   }
