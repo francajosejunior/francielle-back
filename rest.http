@@ -8,10 +8,10 @@ GET http://localhost:3333/card/
 # Content-Type: application/json
 
 # {
-#     "number":"335",
-#     "address":"R. Francisco Araújo Chaves",
-#     "neighborhood":"Jardim Europa", 
-#     "name":"Francielle",
+#     "number":"1656",
+#     "address":"Av Carolina De Abreu",
+#     "neighborhood":"Vila Sao Francieco", 
+#     "name":"Zé",
 #     "city":"Jandira",
 #     "state":"São Paulo"
 # }

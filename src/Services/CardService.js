@@ -5,6 +5,10 @@ class CardService {
     return cardRepository.find()
   }
   async save(card) {
+    if (card._id) {
+      return this.update(card)
+    }
+
     return cardRepository.save(card)
   }
   async update(card) {
