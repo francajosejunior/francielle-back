@@ -9,13 +9,18 @@ GET http://localhost:3333/card/
 
 # {
 #     "number":"1656",
+<<<<<<< HEAD
 #     "address":"Av Carolina De Abreu",
 #     "neighborhood":"Vila Sao Francieco", 
+=======
+#     "address":"Av Carolina",
+#     "neighborhood":"Fila Sao Francisco", 
+>>>>>>> d1067a31f64b1effdf8b8ae06ad7b8fdcd6448a9
 #     "name":"Zé",
 #     "city":"Jandira",
 #     "state":"São Paulo"
 # }
-###
+# ###
 
 
 GET http://localhost:3333/itinerary/2019-09-09
