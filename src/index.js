@@ -16,6 +16,8 @@ db.push('/log', `Api is running! ${moment().format('DD-MM-YYYY HH[h]mm[m]ss')}`)
 
 app.use(require('./routes'))
 
-server.listen(3333)
-console.log(`Listen port:${3333}`)
+const PORT = process.env.PORT || 3333
+
+server.listen(PORT)
+console.log(`Listen port:${PORT}`)
 // require('./LatLongRequest')
